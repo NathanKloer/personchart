@@ -1,0 +1,9 @@
+#tablehead {
+    display: flex;
+    padding: 10px;
+}
+
+#label {
+    margin-left: 3%;
+    margin-right: 4%;
+}
