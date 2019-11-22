@@ -11,31 +11,107 @@
     <section>
         <article>
             <h1>Chart-a-Person</h1>
-            <p>Name a person, give them stats, add them to the list!</p>
+            <span>Name a person, give them stats, add them to the list!</span>
         </article>
-        <article id="tablehead">
+        <!-- <article id="tablehead">
             <div id="label">First</div>
-            <div id="label">MI</div>
+            <div id="label" class="mi">MI</div>
             <div id="label">Last</div>
+            <div id="label">DOB</div>
             <div id="label">Email</div>
             <div id="label">Address</div>
-            <div id="label">DOB</div>
             <div id="label">City</div>
             <div id="label">State</div>
-            <div id="label">Zip</div>
-        </article>
-        <div id="root"></div>
+            <div id="label" class="zip">Zip</div>
+        </article> -->
+        <div id="root">
+            <div id="tablehead">
+                <div id="label">First</div>
+                <div id="label" class="mi">MI</div>
+                <div id="label">Last</div>
+                <div id="label">DOB</div>
+                <div id="label">Address</div>
+                <div id="label">City</div>
+                <div id="label">State</div>
+                <div id="label" class="zip">Zip</div>
+                <div id="label">Email</div>
+            </div>
+        </div>
+        <br><br><br>
         <form id="entryform">
-            <input id="firstName" placeholder="First Name">
-            <input id="middleName" placeholder="MI">
-            <input id="lastName" placeholder="Last Name">
-            <input id="email" placeholder="Email">
-            <input id="address" placeholder="Street Address">
-            <input id="dob" placeholder="Date-of-Birth">
-            <input id="city" placeholder="City">
-            <input id="state" placeholder="State">
-            <input id="zip" placeholder="Zip">
+            <label for="firstName">First Name</label>
+            <input id="firstName" placeholder="First Name" type="text" value="Nathan">
+            <label for="middleName">Middle Name</label>
+            <input id="middleName" placeholder="MI" type="text" value="B">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" placeholder="Last Name" type="text" value="Kloer">
+            <br>
+            <label for="dob">Date-of-Birth</label>
+            <input id="dob" placeholder="Date-of-Birth" type="date">
+            <br>
+            <label for="address">Address</label>
+            <input id="address" placeholder="Street Address" value="2290 Frairs Gate Drive">
+            <br>
+            <input id="city" placeholder="City" value="Atlanta">
+            <select id="state">
+                <option value="AL">AL</option>
+                <option value="AK">AK</option>
+                <option value="AZ">AZ</option>
+                <option value="AR">AR</option>
+                <option value="CA">CA</option>
+                <option value="CO">CO</option>
+                <option value="CT">CT</option>
+                <option value="DE">DE</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="HI">HI</option>
+                <option value="ID">ID</option>
+                <option value="IL">IL</option>
+                <option value="IN">IN</option>
+                <option value="IA">IA</option>
+                <option value="KS">KS</option>
+                <option value="KY">KY</option>
+                <option value="LA">LA</option>
+                <option value="ME">ME</option>
+                <option value="MD">MD</option>
+                <option value="MA">MA</option>
+                <option value="MI">MI</option>
+                <option value="MN">MN</option>
+                <option value="MS">MS</option>
+                <option value="MO">MO</option>
+                <option value="MT">MT</option>
+                <option value="NE">NE</option>
+                <option value="NV">NV</option>
+                <option value="NH">NH</option>
+                <option value="NJ">NJ</option>
+                <option value="NM">NM</option>
+                <option value="NY">NY</option>
+                <option value="NC">NC</option>
+                <option value="ND">ND</option>
+                <option value="OH">OH</option>
+                <option value="OK">OK</option>
+                <option value="OR">OR</option>
+                <option value="PA">PA</option>
+                <option value="RI">RI</option>
+                <option value="SC">SC</option>
+                <option value="SD">SD</option>
+                <option value="TN">TN</option>
+                <option value="TX">TX</option>
+                <option value="UT">UT</option>
+                <option value="VT">VT</option>
+                <option value="VA">VA</option>
+                <option value="WA">WA</option>
+                <option value="WV">WV</option>
+                <option value="WI">WI</option>
+                <option value="WY">WV</option>
+            </select>
+            <input id="zip" placeholder="Zip" value="30043">
+            <br>
+            <input id="email" placeholder="Email" type="email" value="nathan.kloer@gmail.com">
+            <br><br>
+            <button id="btn" type="button" value="submit">Submit</button>
         </form>
     </section>
+    <script src="app.js"></script>
 </body>
 </html>
