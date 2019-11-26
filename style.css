@@ -3,13 +3,25 @@
     width: 100%;
 }
 
-label {
-    width: 40px;
-}
-
-
 #root {
     width: 100%;
+    /* margin: 0 10px 0 10px; */
+    overflow: hidden;
+}
+
+#tablehead {
+    display: flex;
+}
+
+#tablehead p {
+    width: 10%;
+}
+
+#dlt{
+    border: 2px solid black;
+    height: 24px;
+    width: 24px;
+    margin: auto;
 }
 
 .entry{
@@ -17,9 +29,13 @@ label {
     width: 100%
 }
 
+.entry p {
+    width: 10%;
+}
+
 p {
     width: 100%;
-    margin: 0 10px 0 10px;
+    /* margin: 0 10px 0 10px; */
     overflow: hidden;
 }
 

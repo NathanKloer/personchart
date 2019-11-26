@@ -13,28 +13,29 @@
             <h1>Chart-a-Person</h1>
             <span>Name a person, give them stats, add them to the list!</span>
         </article>
-        <!-- <article id="tablehead">
-            <div id="label">First</div>
-            <div id="label" class="mi">MI</div>
-            <div id="label">Last</div>
-            <div id="label">DOB</div>
-            <div id="label">Email</div>
-            <div id="label">Address</div>
-            <div id="label">City</div>
-            <div id="label">State</div>
-            <div id="label" class="zip">Zip</div>
-        </article> -->
         <div id="root">
             <div id="tablehead">
-                <div id="label">First</div>
-                <div id="label" class="mi">MI</div>
-                <div id="label">Last</div>
-                <div id="label">DOB</div>
-                <div id="label">Address</div>
-                <div id="label">City</div>
-                <div id="label">State</div>
-                <div id="label" class="zip">Zip</div>
-                <div id="label">Email</div>
+                <p>First</p>
+                <p class="mi">MI</p>
+                <p>Last</p>
+                <p>DOB (y/m/d)</p>
+                <p>Address</p>
+                <p>City</p>
+                <p>State</p>
+                <p class="zip" class="zip">Zip</p>
+                <p>Email</p> 
+            </div>
+            <div id="RuthLinusPicaso" class="entry">
+                <p>Ruth</p>
+                <p>Linus</p>
+                <p>Picaso</p>
+                <p>1956-11-02</p>
+                <p>2092 Really Big Rd</p>
+                <p>Atlantis</p>
+                <p>FL</p>
+                <p>00236</p>
+                <p>ruthyoldtoothy@gmail.com</p>
+                <button id="dlt" class="deleteBtn" type="button" name="RuthLinusPicaso">x</button>
             </div>
         </div>
         <br><br><br>
@@ -111,6 +112,14 @@
             <br><br>
             <button id="btn" type="button" value="submit">Submit</button>
         </form>
+        <article>
+            <h1>Update Form</h1>
+            <p>input ID</p>
+            <form>
+                <input id="updateInput">
+                <button id="updateBtn" type="button" value="submit">Submit</button>
+            </form>
+        </article>
     </section>
     <script src="app.js"></script>
 </body>
